@@ -134,10 +134,32 @@
                 <div class="col-xs-12 col-md-6">
                   <div class="hero-full-wrapper">
                     <div class="text-content">
-                      <h1 class="display-1">Kamelia Khoirunnisa</h1>
-                      <!-- <img src="assets/img/author.png" alt="" width="65%"> -->
                        <br>
-                      <p class="display-4">Hai saya Icha .. saya adalah author dari platform InterQuizz.</p>
+                      <!-- Carousel -->
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                          <h1 class="display-1">Kamelia Khoirunnisa</h1>
+                          <p class="display-4">Hai saya Icha .. saya adalah author dari platform InterQuizz.</p>
+                        </div>
+                        <div class="item"><h1 class="display-1">
+                          <h1>Kamelia Khoirunnisa</h1>
+                          <p class="display-4">Hai saya Icha .. saya adalah author dari platform InterQuizz.</p>
+                        </div>
+                        <div class="item"><h4>3</h4></div>
+                        <div class="item"><h4>4</h4></div>
+                        <div class="item"><h4>5</h4></div>
+                        <div class="item"><h4>6</h4></div>
+                        <div class="item"><h4>7</h4></div>
+                        <div class="item"><h4>8</h4></div>
+                        <div class="item"><h4>9</h4></div>
+                        <div class="item"><h4>10</h4></div>
+                        <div class="item"><h4>11</h4></div>
+                        <div class="item"><h4>12</h4></div>
+                    </div>
+                    <a class="btn btn-secondary" id="play">Play</a> 
+                    <a class="btn btn-danger" id="stop">Stop</a> 
+                      <!-- ./carousel -->
+
                     </div>
                   </div>
                 </div>
@@ -178,24 +200,56 @@
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/owl/owl.carousel.js"></script>
-  <script src="assets/vendor/owl/owl.carousel.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  
 </body>
+<!-- Preloader -->
+<div id="preloader"></div>
 
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+<script src="assets/vendor/owl/owl.carousel.js"></script>
+<script src="assets/vendor/owl/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function() {
+      var owl = $('.owl-carousel');
+      // $('.owl-carousel').owlCarousel({
+      owl.owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        },
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true
+      })
+      $('#play').on('click',function(){
+          owl.trigger('play.owl.autoplay',[1000])
+      })
+      $('#stop').on('click',function(){
+          owl.trigger('stop.owl.autoplay')
+      })
+    })
+</script>
 </html>
