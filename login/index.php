@@ -122,18 +122,18 @@
     <section class="">
     <div class="container-fluid">
       <!-- form login -->
-        <form>
+        <form method="post">
           <img class="mb-4 mx-auto d-block" src="../assets/img/logointerquizz.png" alt="" width="112" height="97">
           <!-- <h1 class="h3 mb-3 fw-normal">Please sign in</h1> -->
 
           <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="email" name="username" class="form-control text-subtle" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput" class="text-danger">Username</label>
           </div>
           <br>
           <br>
           <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" name="password" class="form-control text-subtle" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword" class="text-danger">Password</label>
           </div>
 
@@ -143,7 +143,7 @@
               Remember me
             </label>
           </div>
-          <button class="btn btn-primary w-100 py-2" type="submit">Login</button>
+          <button class="btn btn-primary w-100 py-2" name="submit" type="submit">Login</button>
           <p class="mt-5 mb-3 text-body-light">Kamelia Khoirunnisa &copy; 2024-2025</p>
         </form>
       <!-- ./form login -->
