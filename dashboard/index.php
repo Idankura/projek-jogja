@@ -141,11 +141,11 @@
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
-              <span class="menu-title">Form Elements</span>
+              <span class="menu-title">Generate Undangan</span>
               <i class="menu-arrow"></i>
             </a>
           </li>
-          <li class="nav-item menu-items">
+          <!-- <li class="nav-item menu-items">
             <a class="nav-link" href="pages/tables/basic-table.html">
               <span class="menu-icon">
                 <i class="mdi mdi-table-large"></i>
@@ -197,7 +197,7 @@
               </span>
               <span class="menu-title">Documentation</span>
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
       <!-- partial -->
