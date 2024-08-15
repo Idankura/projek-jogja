@@ -68,7 +68,7 @@
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
+                  <h5 class="mb-0 font-weight-normal">KAMELIA ICHA</h5>
                   <!-- <span>Gold Member</span> -->
                 </div>
               </div>
@@ -227,22 +227,11 @@
                   <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
-                        <i class="mdi mdi-file-outline text-primary"></i>
+                        <i class="mdi mdi-layers text-danger"></i>
                       </div>
                     </div>
                     <div class="preview-item-content">
-                      <p class="preview-subject ellipsis mb-1">Software Development</p>
-                    </div>
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon bg-dark rounded-circle">
-                        <i class="mdi mdi-web text-info"></i>
-                      </div>
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject ellipsis mb-1">UI Development</p>
+                      <p class="preview-subject ellipsis mb-1">KIMIA</p>
                     </div>
                   </a>
                   <div class="dropdown-divider"></div>
@@ -253,7 +242,7 @@
                       </div>
                     </div>
                     <div class="preview-item-content">
-                      <p class="preview-subject ellipsis mb-1">Software Testing</p>
+                      <p class="preview-subject ellipsis mb-1">FISIKA</p>
                     </div>
                   </a>
                   <div class="dropdown-divider"></div>
@@ -477,81 +466,37 @@
                             </div>
                             <div class="preview-item-content d-sm-flex flex-grow">
                               <div class="flex-grow">
-                                <h6 class="preview-subject">Admin dashboard design</h6>
+                                <h6 class="preview-subject">Admin QUIZZ</h6>
                                 <p class="text-muted mb-0">Broadcast web app mockup</p>
                               </div>
                               <div class="mr-auto text-sm-right pt-2 pt-sm-0">
-                                <p class="text-muted">15 minutes ago</p>
-                                <p class="text-muted mb-0">30 tasks, 5 issues </p>
+                              <?php
+                                echo date("H:i:s"); // Format jam:menit:detik
+                                       ?>
                               </div>
                             </div>
                           </div>
+                          <div class="row">
+                      <div class="col-12">
+                        <div class="preview-list">
                           <div class="preview-item border-bottom">
                             <div class="preview-thumbnail">
-                              <div class="preview-icon bg-success">
-                                <i class="mdi mdi-cloud-download"></i>
+                              <div class="preview-icon bg-primary">
+                                <i class="mdi mdi-file-document"></i>
                               </div>
                             </div>
                             <div class="preview-item-content d-sm-flex flex-grow">
                               <div class="flex-grow">
-                                <h6 class="preview-subject">Wordpress Development</h6>
-                                <p class="text-muted mb-0">Upload new design</p>
+                                <h6 class="preview-subject">QUIZZ KIMIA & FISIKA</h6>
+                                <p class="text-muted mb-0">Broadcast web app mockup</p>
                               </div>
                               <div class="mr-auto text-sm-right pt-2 pt-sm-0">
-                                <p class="text-muted">1 hour ago</p>
-                                <p class="text-muted mb-0">23 tasks, 5 issues </p>
+                              <?php
+                                echo date("H:i:s"); // Format jam:menit:detik
+                                       ?>
                               </div>
                             </div>
                           </div>
-                          <div class="preview-item border-bottom">
-                            <div class="preview-thumbnail">
-                              <div class="preview-icon bg-info">
-                                <i class="mdi mdi-clock"></i>
-                              </div>
-                            </div>
-                            <div class="preview-item-content d-sm-flex flex-grow">
-                              <div class="flex-grow">
-                                <h6 class="preview-subject">Project meeting</h6>
-                                <p class="text-muted mb-0">New project discussion</p>
-                              </div>
-                              <div class="mr-auto text-sm-right pt-2 pt-sm-0">
-                                <p class="text-muted">35 minutes ago</p>
-                                <p class="text-muted mb-0">15 tasks, 2 issues</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="preview-item border-bottom">
-                            <div class="preview-thumbnail">
-                              <div class="preview-icon bg-danger">
-                                <i class="mdi mdi-email-open"></i>
-                              </div>
-                            </div>
-                            <div class="preview-item-content d-sm-flex flex-grow">
-                              <div class="flex-grow">
-                                <h6 class="preview-subject">Broadcast Mail</h6>
-                                <p class="text-muted mb-0">Sent release details to team</p>
-                              </div>
-                              <div class="mr-auto text-sm-right pt-2 pt-sm-0">
-                                <p class="text-muted">55 minutes ago</p>
-                                <p class="text-muted mb-0">35 tasks, 7 issues </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="preview-item">
-                            <div class="preview-thumbnail">
-                              <div class="preview-icon bg-warning">
-                                <i class="mdi mdi-chart-pie"></i>
-                              </div>
-                            </div>
-                            <div class="preview-item-content d-sm-flex flex-grow">
-                              <div class="flex-grow">
-                                <h6 class="preview-subject">UI Design</h6>
-                                <p class="text-muted mb-0">New application planning</p>
-                              </div>
-                              <div class="mr-auto text-sm-right pt-2 pt-sm-0">
-                                <p class="text-muted">50 minutes ago</p>
-                                <p class="text-muted mb-0">27 tasks, 4 issues </p>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -636,7 +581,7 @@
               <div class="col-12 grid-margin">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Order Status</h4>
+                    <h4 class="card-title">Status Pengguna</h4>
                     <div class="table-responsive">
                       <table class="table">
                         <thead>
@@ -648,13 +593,10 @@
                                 </label>
                               </div>
                             </th>
-                            <th> Client Name </th>
+                            <th> Name </th>
                             <th> Order No </th>
-                            <th> Product Cost </th>
-                            <th> Project </th>
-                            <th> Payment Mode </th>
-                            <th> Start Date </th>
-                            <th> Payment Status </th>
+                            <th> Tanggal Lahir </th>
+                            <th> Tempat tinggal </th>
                           </tr>
                         </thead>
                         <tbody>
@@ -668,13 +610,11 @@
                             </td>
                             <td>
                               <img src="assets/images/faces/face1.jpg" alt="image" />
-                              <span class="ps-2">Henry Klein</span>
+                              <span class="ps-2">ICHA</span>
                             </td>
-                            <td> 02312 </td>
-                            <td> $14,500 </td>
-                            <td> Dashboard </td>
-                            <td> Credit card </td>
-                            <td> 04 Dec 2019 </td>
+                            <td> 1 </td>
+                            <td> CIREBON </td>
+                            <td> 11 - 01 - 2003 </td>
                             <td>
                               <div class="badge badge-outline-success">Approved</div>
                             </td>
@@ -691,11 +631,9 @@
                               <img src="assets/images/faces/face2.jpg" alt="image" />
                               <span class="ps-2">Estella Bryan</span>
                             </td>
-                            <td> 02312 </td>
-                            <td> $14,500 </td>
-                            <td> Website </td>
-                            <td> Cash on delivered </td>
-                            <td> 04 Dec 2019 </td>
+                            <td> 2 </td>
+                            <td> CILEGON </td>
+                            <td> 15 - 01 - 2000 </td>
                             <td>
                               <div class="badge badge-outline-warning">Pending</div>
                             </td>
@@ -712,11 +650,9 @@
                               <img src="assets/images/faces/face5.jpg" alt="image" />
                               <span class="ps-2">Lucy Abbott</span>
                             </td>
-                            <td> 02312 </td>
-                            <td> $14,500 </td>
-                            <td> App design </td>
-                            <td> Credit card </td>
-                            <td> 04 Dec 2019 </td>
+                            <td> 3 </td>
+                            <td> JAKARTA </td>
+                            <td> 01 - 02 - 1999 </td>
                             <td>
                               <div class="badge badge-outline-danger">Rejected</div>
                             </td>
@@ -733,13 +669,11 @@
                               <img src="assets/images/faces/face3.jpg" alt="image" />
                               <span class="ps-2">Peter Gill</span>
                             </td>
-                            <td> 02312 </td>
-                            <td> $14,500 </td>
-                            <td> Development </td>
-                            <td> Online Payment </td>
-                            <td> 04 Dec 2019 </td>
+                            <td> 4 </td>
+                            <td> SAMARINDA </td>
+                            <td> 20 - 01 - 1989 </td>
                             <td>
-                              <div class="badge badge-outline-success">Approved</div>
+                              <div class="badge badge-outline-success">SUKSES</div>
                             </td>
                           </tr>
                           <tr>
@@ -752,15 +686,13 @@
                             </td>
                             <td>
                               <img src="assets/images/faces/face4.jpg" alt="image" />
-                              <span class="ps-2">Sallie Reyes</span>
+                              <span class="ps-2">SallIM</span>
                             </td>
-                            <td> 02312 </td>
-                            <td> $14,500 </td>
-                            <td> Website </td>
-                            <td> Credit card </td>
-                            <td> 04 Dec 2019 </td>
+                            <td> 5 </td>
+                            <td> Bandung </td>
+                            <td> 15 - 04 - 2000 </td>
                             <td>
-                              <div class="badge badge-outline-success">Approved</div>
+                              <div class="badge badge-outline-success">SUKSES</div>
                             </td>
                           </tr>
                         </tbody>
@@ -774,7 +706,7 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Visitors by Countries</h4>
+                    <h4 class="card-title">PETA DUNIA</h4>
                     <div class="row">
                       <div class="col-md-5">
                         <div class="table-responsive">
@@ -782,9 +714,9 @@
                             <tbody>
                               <tr>
                                 <td>
-                                  <i class="flag-icon flag-icon-us"></i>
+                                  <i class="flag-icon flag-icon-indonesia"></i>
                                 </td>
-                                <td>USA</td>
+                                <td>INDONESIA</td>
                                 <td class="text-end"> 1500 </td>
                                 <td class="text-end font-weight-medium"> 56.35% </td>
                               </tr>
@@ -845,7 +777,7 @@
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2024 <a href="https://www.bootstrapdash.com/" target="_blank">BootstrapDash</a>. All rights reserved.</span>
+              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2024 <a href="#" target="_blank">interquizz</a>. All rights reserved.</span>
               <span class="text-muted float-none float-sm-end d-block mt-1 mt-sm-0 text-center"> <span class="text-muted float-none float-sm-end d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span> <i class="mdi mdi-heart text-danger"></i></span>
             </div>
           </footer>

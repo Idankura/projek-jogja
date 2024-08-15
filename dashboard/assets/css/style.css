@@ -8389,7 +8389,7 @@
   --bs-warning: #ffab00;
   --bs-danger: #fc424a;
   --bs-light: #ffffff;
-  --bs-dark: #0d0d0d;
+  --bs-dark: #f30fa7;
   --bs-primary-rgb: 0, 144, 231;
   --bs-secondary-rgb: 228, 234, 236;
   --bs-success-rgb: 0, 210, 91;
@@ -8435,13 +8435,13 @@
   --bs-body-color-rgb: 255, 255, 255;
   --bs-body-bg: #fff;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-emphasis-color: #000;
+  --bs-emphasis-color: #fc1795;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(33, 37, 41, 0.75);
   --bs-secondary-color-rgb: 33, 37, 41;
   --bs-secondary-bg: #e9ecef;
   --bs-secondary-bg-rgb: 233, 236, 239;
-  --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+  --bs-tertiary-color: rgba(207, 20, 145, 0.5);
   --bs-tertiary-color-rgb: 33, 37, 41;
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
