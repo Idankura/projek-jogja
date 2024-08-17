@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 include '../config/koneksi.php';
-session_start();
+
  
 // if (isset($_SESSION['username'])) {
 //     header("Location: ../dashboard/index.php");
@@ -12,6 +12,7 @@ session_start();
 // }
  
 if (isset($_POST['submit'])) {
+    session_start();
     $username = $_POST['username'];
     $password = $_POST['password']; // Hash the input password using SHA-256
     
@@ -25,7 +26,7 @@ if (isset($_POST['submit'])) {
         $_SESSION['username'] = $row['username'];
         $_SESSION['nama_lengkap'] = $row['nama_lengkap'];
       
-        $_SESSION['login'] == true;
+        $_SESSION['login'] = true;
         header("Location: ../dashboard/index.php");
         exit();
     } else {

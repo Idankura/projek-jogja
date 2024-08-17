@@ -1,9 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION['login'])!=true) {
-  // session_start();
-  // Jika session tidak ada atau tidak valid, arahkan ke halaman login
-  // Cek apakah session 'username' ada, jika tidak arahkan ke halaman login
+if (!isset($_SESSION['login'])) {
   header("Location: ../login/index.php");
   exit(); 
 }
