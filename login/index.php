@@ -1,23 +1,31 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 include '../config/koneksi.php';
 session_start();
  
-if (isset($_SESSION['username'])) {
-    header("Location: ../dashboard/index.php");
-    exit();
-}
+// if (isset($_SESSION['username'])) {
+//     header("Location: ../dashboard/index.php");
+//     exit();
+// }
  
 if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $password = $_POST['password']; // Hash the input password using SHA-256
- 
-    $sql = "SELECT * FROM user WHERE username='$username' AND password='$password'";
+    
+    $hashed_password = hash('sha256', $password);
+
+    $sql = "SELECT * FROM user WHERE username='$username' AND password='$hashed_password'";
     $result = mysqli_query($koneksi, $sql);
  
     if ($result->num_rows > 0) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION['username'] = $row['username'];
+        $_SESSION['nama_lengkap'] = $row['nama_lengkap'];
+      
+        $_SESSION['login'] == true;
         header("Location: ../dashboard/index.php");
         exit();
     } else {
