@@ -112,7 +112,7 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buat</a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?=$root_url."/dashboard/soal" ?>">Buat</a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Join</a></li>
                 <!-- <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li> -->
               </ul>

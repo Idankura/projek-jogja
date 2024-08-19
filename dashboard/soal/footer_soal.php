@@ -1,4 +1,6 @@
    <!-- container-scroller -->
+    <!-- jquery -->
+    <script src=" assets/vendors/jquery.min.js"></script>
     <!-- plugins:js -->
     <script src=" assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
@@ -16,4 +18,5 @@
     <script src=" assets/js/file-upload.js"></script>
     <script src=" assets/js/typeahead.js"></script>
     <script src=" assets/js/select2.js"></script>
+    <script src="assets/js/soal.js"></script>
     <!-- End custom js for this page -->
