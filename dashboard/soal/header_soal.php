@@ -23,6 +23,10 @@
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href=" assets/vendors/select2/select2.min.css">
     <link rel="stylesheet" href=" assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+    <!-- timepicker bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css"/>
+   <!-- ./time picker bootstrap -->
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
@@ -117,7 +121,7 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buat</a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?php echo $root_url."dashboard/soal/"?>">Buat</a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Join</a></li>
                 <!-- <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li> -->
               </ul>
