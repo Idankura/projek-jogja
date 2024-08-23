@@ -75,7 +75,29 @@ document.addEventListener('click', function(event) {
     }
 });
 
+// value jumlah soal
 
+$('#jumlah-soal').on('input', function() {
+    let jumlahSoal = $(this).val(); // Ambil nilai dari input Jumlah Soal
+    let pilganForm = $('#pilgan-form');
+    let essayForm = $('#essay-form');
+
+    // Hapus semua duplikat sebelumnya, kecuali yang asli
+    $('.duplicate').remove();
+
+    // Perulangan untuk menduplikasi form berdasarkan nilai input
+    if (jumlahSoal > 1) {
+        for (let i = 2; i <= jumlahSoal; i++) {
+            if (pilganForm.is(':visible')) {
+                let clonedPilganForm = pilganForm.clone().attr('id', 'pilgan-form-' + i).addClass('duplicate');
+                pilganForm.after(clonedPilganForm);
+            } else if (essayForm.is(':visible')) {
+                let clonedEssayForm = essayForm.clone().attr('id', 'essay-form-' + i).addClass('duplicate');
+                essayForm.after(clonedEssayForm);
+            }
+        }
+    }
+});
 
 
 

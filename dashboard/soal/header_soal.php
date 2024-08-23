@@ -36,6 +36,13 @@
      <link rel="stylesheet" href="assets/css/soal.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href=" assets/images/favicon.png" />
+    <style>
+      .sidebar-offcanvas {
+
+                          height: 180vh !important;
+                          overflow-y: auto !important;
+        }
+    </style>
     </head>
   <body>
     <div class="container-scroller">
@@ -121,7 +128,7 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="<?php echo $root_url."dashboard/soal/"?>">Buat</a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?php echo $root_url."/dashboard/soal/"?>">Buat</a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Join</a></li>
                 <!-- <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li> -->
               </ul>

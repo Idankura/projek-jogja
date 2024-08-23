@@ -36,6 +36,9 @@
                               <label class="form-check-label">
                                 <input type="checkbox" class="form-check-input" id="essay"> ESSAY </label>
                             </div>
+                            <div class="form-check">
+                              <input type="text" class="form-control" id="jumlah-soal" placeholder="Jumlah Soal" aria-label="Jumlah Soal" aria-describedby="basic-addon2">
+                            </div>
                        
                           </div>
                         </div>
@@ -44,7 +47,7 @@
                           
                         </div>
                       </div>
-                    </form>
+                    
                   </div>
                 </div>
               </div>
@@ -93,24 +96,43 @@
                                     </div>
                                     <!-- ./opsi Tambah -->
                                 </div>
-                                <!-- form deadline pengerjaan -->
-                                      <div class="cs-form">
-                                          <input type="time" class="form-control" value="10:05 AM" />
-                                      </div>                                   
-                                      <!-- ./form deadline pengerjaan -->
+                                
+                                       <!-- tombol submit -->
+                                       <div class="container m-5">
+                                        <div class="row">
+                                          
+                                            <div class="col">
+                                              <button type="submit" name="tambahpilgan" id="tambahpilgan" class="btn btn-success">Tambah Soal</button>
+                                            </div>
+                                            <div class="col">
+                                              <button type="submit" name="hapussoalpilgan" id="hapuspilgan" class="btn btn-danger">Hapus Soal</button>
+                                            </div>
+                                        </div>
+                                       </div>
+                                        
                             </div>
-                        </form>
-
-
+                            
                           <!-- form essay -->
-                        <form action="">
+                        
                             <div class="form-check form-check-primary" id="essay-form" style="display: none;">
                               <label class="form-check-label">
                               <!-- <textarea placeholder="Masukkan jawaban essay di sini"></textarea> -->
                               <textarea name="" id="" class="textareapg p-5"></textarea>
+                              
                             </div>
+                            
                           </div>
                         </div>
+                        <p class="card-description">Form Waktu Sesi Quizz</p>
+                                      <!-- form deadline pengerjaan -->
+                                      <div class="cs-form">
+                                          <input type="time" class="form-control" value="10:05 AM" />
+                                      </div>                                   
+                                      <!-- ./form deadline pengerjaan -->
+                                       <br><br>
+                              <div class="container" id="simpan-form">
+                                <button name="simpanpilgan" class="btn btn-primary">Simpan Perubahan</button>
+                              </div>
                       </form>
                </div>
             </div>
@@ -119,7 +141,7 @@
           <!-- content-wrapper ends -->
           <!-- partial: partials/_footer.html -->
           <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between fixed-bottom">
               <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2024 <a href="https://www.bootstrapdash.com/" target="_blank">InterQuizz</a>. All rights reserved.</span>
               <span class="text-muted float-none float-sm-end d-block mt-1 mt-sm-0 text-center"> <span class="text-muted float-none float-sm-end d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span> <i class="mdi mdi-heart text-danger"></i></span>
             </div>
