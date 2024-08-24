@@ -12,8 +12,7 @@
               <h3 class="page-title"> Buat Soal </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <!-- <li class="breadcrumb-item"><a href="#">Forms</a></li> -->
-                  <!-- <li class="breadcrumb-item active" aria-current="page">Form elements</li> -->
+              
                 </ol>
               </nav>
             </div>
@@ -70,7 +69,7 @@
                                 
                                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                                     <!-- opsi A -->
-                                    <div class="col hapus" id="0">
+                                    <div class="col hapus" id="col0">
                                         <div class="card shadow-sm">
                                             <div class="row">
                                                   <div class="col p-3">
@@ -118,8 +117,20 @@
                               <label class="form-check-label">
                               <!-- <textarea placeholder="Masukkan jawaban essay di sini"></textarea> -->
                               <textarea name="" id="" class="textareapg p-5"></textarea>
-                              
+                                <!-- tombol submit -->
+                                <div class="container m-5">
+                                        <div class="row">
+                                          
+                                            <div class="col">
+                                              <button type="submit" name="tambahpilgan" id="tambahpilgan" class="btn btn-success">Tambah Soal</button>
+                                            </div>
+                                            <div class="col">
+                                              <button type="submit" name="hapussoalpilgan" id="hapuspilgan" class="btn btn-danger">Hapus Soal</button>
+                                            </div>
+                                        </div>
+                                       </div>
                             </div>
+                            
                             
                           </div>
                         </div>
