@@ -1,0 +1,1 @@
+<input type="checkbox" name="ceklis_pilihan" id="pilgan" value="pilihan-ganda">

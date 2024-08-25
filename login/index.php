@@ -25,6 +25,7 @@ if (isset($_POST['submit'])) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION['username'] = $row['username'];
         $_SESSION['nama_lengkap'] = $row['nama_lengkap'];
+        $_SESSION['kode_user'] = $row['user_id'];
       
         $_SESSION['login'] = true;
         header("Location: ../dashboard/index.php");

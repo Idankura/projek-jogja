@@ -17,7 +17,8 @@ $("#pilgan").on("change", function() {
 });
 
 let counter = 1;
-
+{/* <input type="checkbox" name="ceklis_pilihan" id="pilgan" value="pilihan-ganda"></input> */}
+// <input type="checkbox"  id="${optionId}" name="${optionId}"/>
 // Event delegation untuk menambahkan elemen baru saat tombol "+" diklik
 document.addEventListener('click', function(event) {
     const target = event.target.closest('[id^="customButton"]');
@@ -31,7 +32,9 @@ document.addEventListener('click', function(event) {
                     <div class="row">
                         <div class="col p-3">
                             <label class="form-check-label position-absolute top-0 start-0" for="${optionId}">
-                                <input type="checkbox" class="form-check-input text-start" id="${optionId}" name="options[]">
+                                
+                                <input type="checkbox" class="form-check-input" id="${optionId}" name="${optionId}"/>
+                               <i class="input-helper pe-2"></i>
                                 ${String.fromCharCode(64 + counter)}
                             </label>
                         </div>
