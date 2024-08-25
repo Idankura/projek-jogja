@@ -128,7 +128,9 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="<?php echo $root_url."/dashboard/soal/"?>">Buat</a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?php echo $root_url."/dashboard/soal/?page=buat-soal"?>">Home Quizz</a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?php echo $root_url."/dashboard/soal/?page=buat-soal"?>">Buat Quizz</a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?php echo $root_url."/dashboard/soal/?page=edit-soal"?>">Edit Quizz</a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Join</a></li>
                 <!-- <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li> -->
               </ul>
