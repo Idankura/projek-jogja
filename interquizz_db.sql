@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 25, 2024 at 10:10 AM
+-- Generation Time: Aug 26, 2024 at 01:14 PM
 -- Server version: 10.11.6-MariaDB-0+deb12u1
 -- PHP Version: 8.2.20
 
@@ -47,6 +47,18 @@ CREATE TABLE `hasil` (
   `user_id` int(255) NOT NULL,
   `score` float NOT NULL,
   `completed_at` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jawaban_benar`
+--
+
+CREATE TABLE `jawaban_benar` (
+  `jawaban_benar_id` int(255) NOT NULL,
+  `question_id` int(255) NOT NULL,
+  `option_id` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -98,6 +110,13 @@ CREATE TABLE `kuis` (
   `updated_at` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `kuis`
+--
+
+INSERT INTO `kuis` (`quiz_id`, `title`, `description`, `creator_id`, `created_at`, `updated_at`) VALUES
+(1, 'quizz microsoft word', 'teknologi ', 19, '2024-08-25 09:31:30', '2024-08-25');
+
 -- --------------------------------------------------------
 
 --
@@ -122,6 +141,17 @@ CREATE TABLE `options` (
   `is_correct` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `options`
+--
+
+INSERT INTO `options` (`option_id`, `question_id`, `option_text`, `is_correct`) VALUES
+(1, 1, 'Pilihan A', 0),
+(2, 1, 'Pilihan B', 1),
+(3, 1, 'Pilihan C', 0),
+(4, 1, 'Pilihan D', 0),
+(5, 1, 'dsadasd', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -136,6 +166,13 @@ CREATE TABLE `pertanyaan` (
   `created_at` date NOT NULL,
   `updated_at` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pertanyaan`
+--
+
+INSERT INTO `pertanyaan` (`question_id`, `quiz_id`, `question_text`, `question_type`, `created_at`, `updated_at`) VALUES
+(1, 1, '', 'pilihan-ganda', '2024-08-25', '2024-08-25');
 
 -- --------------------------------------------------------
 
@@ -180,6 +217,14 @@ ALTER TABLE `hasil`
   ADD PRIMARY KEY (`result_id`),
   ADD KEY `hasil.quiz_id_kuis.quiz_id` (`quiz_id`),
   ADD KEY `hasil.user_id_user.user_id` (`user_id`);
+
+--
+-- Indexes for table `jawaban_benar`
+--
+ALTER TABLE `jawaban_benar`
+  ADD PRIMARY KEY (`jawaban_benar_id`),
+  ADD KEY `question_id` (`question_id`),
+  ADD KEY `option_id` (`option_id`);
 
 --
 -- Indexes for table `kategori`
@@ -250,6 +295,12 @@ ALTER TABLE `hasil`
   MODIFY `result_id` int(255) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `jawaban_benar`
+--
+ALTER TABLE `jawaban_benar`
+  MODIFY `jawaban_benar_id` int(255) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `kategori`
 --
 ALTER TABLE `kategori`
@@ -265,25 +316,36 @@ ALTER TABLE `kelas`
 -- AUTO_INCREMENT for table `kuis`
 --
 ALTER TABLE `kuis`
-  MODIFY `quiz_id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `quiz_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `options`
 --
 ALTER TABLE `options`
-  MODIFY `option_id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `option_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `pertanyaan`
 --
 ALTER TABLE `pertanyaan`
-  MODIFY `question_id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `question_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `user_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `jawaban_benar`
+--
+ALTER TABLE `jawaban_benar`
+  ADD CONSTRAINT `jawaban_benar_ibfk_1` FOREIGN KEY (`question_id`) REFERENCES `pertanyaan` (`question_id`),
+  ADD CONSTRAINT `jawaban_benar_ibfk_2` FOREIGN KEY (`option_id`) REFERENCES `options` (`option_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
