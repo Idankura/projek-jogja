@@ -4,7 +4,7 @@
       header("Location: ../../login/index.php");
       exit(); 
       }
-    include 'settings.php';
+      include '../../config/settings.php';
     include '../../config/koneksi.php';
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
